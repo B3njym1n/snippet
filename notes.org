@@ -1,0 +1,14 @@
+* The C Library Reference Guide
+  [[http://www.fortran-2000.com/ArnaudRecipes/Cstd/][The C Library Reference Guide]]
+
+* Meta programming Javascript
+  [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming][MDN]]
+  
+* Metaprogramming Java
+  [[http://inkblotsoftware.com/articles/metaprogramming-java-intro/][inkblotsoftware.com]]
+
+* Metaprogramming custom c
+ [[https://www.chiark.greenend.org.uk/~sgtatham/mp/][with coroutine]] 
+ 
+* c-for-dummies
+  [[https://c-for-dummies.com][c-for-dummies]]
