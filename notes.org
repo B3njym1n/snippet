@@ -12,3 +12,9 @@
  
 * c-for-dummies
   [[https://c-for-dummies.com][c-for-dummies]]
+
+* PID Loop Simulator
+  [[http://engineers-excel.com/Apps/PID_Simulator/Description.htm?msclkid=1e0fab73b71b11ecbec976238dc1b4db][Engineers-Excel]]
+  The PID Loop Simulator is an Excel tool to simulate a Proportional, Integral and Derivative (PID) controller on a First Order Time Delay (FOTPD) process. Both open and closed loop processes can be simulated using this powerful tool. This is a great tool for learning the basics of PID control and loop tuning.
+  [[http://www.grauonline.de/alexwww/ardumower/pid/pid.html?msclkid=1e0d7aabb71b11ec9d405edc1ed89b74][grauonline]]
+  online PID controller simulator
