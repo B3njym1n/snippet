@@ -21,3 +21,7 @@
 
 * Java Serial Port Code
   [[https://www.tabnine.com/code/java/classes/com.fazecast.jSerialComm.SerialPort][tabnine]]
+
+  
+* OpenSource LIMSs
+  [[https://www.senaite.com/docs/installation.html][SENAITE is an add-on for the Plone Content Management Framework]]
