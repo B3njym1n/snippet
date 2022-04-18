@@ -29,3 +29,6 @@
   
 * gnuplot
   [[http://www.gnuplot.info/demo/][demo]]
+
+* Busy Developer'Guide POI
+  [[https://poi.apache.org/components/spreadsheet/quick-guide.html#XSSFHeaderFooter][Busy Developers' Guide to HSSF and XSSF Features]]
