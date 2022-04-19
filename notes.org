@@ -32,3 +32,5 @@
 
 * Busy Developer'Guide POI
   [[https://poi.apache.org/components/spreadsheet/quick-guide.html#XSSFHeaderFooter][Busy Developers' Guide to HSSF and XSSF Features]]
+
+* [[https://brantou.github.io/2017/03/21/just-try/][Org-mode手册]]
