@@ -43,3 +43,29 @@
 
 * functional programming java tutorial
   [[https://www.tutorialspoint.com/functional_programming_with_java/functional_programming_with_java_returning_function.htm][tutorialspoint]]
+
+* serial api
+  [[https://juejin.cn/post/6991629833680158727][juejin]]
+
+  
+* 来自扫码枪应用适配的经验及扩展。
+查了好多资料，发现实现思路不外乎以下几种：
+
+1.使用服务端开发语言开发一个读取串口数据的本地服务模块，并实现websocket长连接支持，前端开启长连接到该服务，根据推送的数据进行操作。
+2.针对IE浏览器，可以采用ActiveX插件读取串口数据，根据插件的API进行开发。
+3.对于chrome浏览器，可以使用Chrome.serial实现
+————————————————
+版权声明：本文为CSDN博主「我爱吃豆芽呀」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/woaidouya123/article/details/105681003
+
+* v2as
+  [[  https://v2as.com/
+][v2as]]
+
+* websocket webassembly
+  [[https://cntofu.com/book/150/zh/ch5-net/ch5-02-websocket.md][wasm]]
+
+  
+* webdev
+  [[https://cntofu.com/book/150/zh/ch5-net/ch5-02-websocket.md][usb]]
+  [[https://web.dev/serial/][serial]]
