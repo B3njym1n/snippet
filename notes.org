@@ -41,3 +41,5 @@
 * Junit5 and assertJ
   [[https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-assertions-with-assertj/][JUnit5 Tutorial With AssertJ]]
 
+* functional programming java tutorial
+  [[https://www.tutorialspoint.com/functional_programming_with_java/functional_programming_with_java_returning_function.htm][tutorialspoint]]
