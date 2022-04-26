@@ -34,3 +34,10 @@
   [[https://poi.apache.org/components/spreadsheet/quick-guide.html#XSSFHeaderFooter][Busy Developers' Guide to HSSF and XSSF Features]]
 
 * [[https://brantou.github.io/2017/03/21/just-try/][Org-mode手册]]
+
+* vavr
+  [[https://apiumhub.com/tech-blog-barcelona/functional-java-with-vavr/?msclkid=4605c99dc36511ec915e7ba025bc9cbe][java with vavr]]
+
+* Junit5 and assertJ
+  [[https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-assertions-with-assertj/][JUnit5 Tutorial With AssertJ]]
+
