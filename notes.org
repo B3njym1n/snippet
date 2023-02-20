@@ -69,3 +69,6 @@
 * webdev
   [[https://cntofu.com/book/150/zh/ch5-net/ch5-02-websocket.md][usb]]
   [[https://web.dev/serial/][serial]]
+
+* junit5并发配置及操作
+  [[https://www.jianshu.com/p/814d77e0ddab][junit5并发配置及操作]]
