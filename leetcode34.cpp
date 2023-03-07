@@ -18,14 +18,14 @@ public:
   int bSearch(int target, vector<int>& nums, bool first)
   {
     int left = 0;
-    int right = nums.size() - 1;
+    int right = nums.size();
     int ret = -1;
-    while (left <= right)
+    while (left < right)
       {
         int mid = (left + right) >> 1;
         if (target < nums[mid])
           {
-            right = mid - 1;
+            right = mid;
           }
         else if (target > nums[mid])
           {
@@ -36,7 +36,7 @@ public:
             ret = mid;
             if (first)
               {
-                right = mid-1;
+                right = mid;
               }
             else
               {
