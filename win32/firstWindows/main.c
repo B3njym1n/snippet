@@ -8,6 +8,7 @@ const char g_szClassName[] = "myWindowClass";
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
+// it's not wise to create dialog dynamically while it's technically possible
 // dynamically add menu
 void CreateMyMenu();
 
