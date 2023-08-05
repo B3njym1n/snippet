@@ -1,15 +1,22 @@
 #include <Windows.h>
 
+#define IDM_OPT1 301
+#define IDM_OPT2 302
+
+HMENU hRoot;
 const char g_szClassName[] = "myWindowClass";
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
+// dynamically add menu
+void CreateMyMenu();
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, LPSTR lcCmdLine, int nCmdShow)
 {
 	WNDCLASSEX wc;
 	HWND hWnd;
 	MSG msg;
-	
+	CreateMyMenu();
 	// Step 1: Registering the Window class
 	wc.cbSize 				= sizeof(WNDCLASSEX);
 	wc.style 				= 0;
@@ -36,7 +43,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, LPSTR lcCmdLine,
 		"The title of my window",
 		WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, CW_USEDEFAULT, 240, 120,
-		NULL, NULL, hInstance, NULL);
+		NULL, 
+		hRoot, 
+		hInstance, NULL);
 	if (hWnd == NULL)
 	{
 		MessageBox(NULL, "Window Creation Failed!", "Error!", MB_ICONEXCLAMATION | MB_OK);
@@ -59,6 +68,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
 	switch(msg)
 	{
+		case WM_COMMAND:
+		{
+			
+			if (LOWORD(wParam) == IDM_OPT1) {
+				MessageBox(NULL, "Air Plane", "Debug", MB_ICONEXCLAMATION | MB_OK);
+			}
+		}
+		break;
 		case WM_CLOSE:
 			DestroyWindow(hWnd);
 			break;
@@ -69,4 +86,22 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			return DefWindowProc(hWnd, msg, wParam, lParam);
 	}
 	return 0;
+}
+
+void CreateMyMenu() {
+	hRoot = CreateMenu();
+	if (!hRoot) return ;
+	HMENU pop1 = CreatePopupMenu();
+	AppendMenu(hRoot, MF_POPUP, (UINT_PTR) pop1, "Operation");
+	AppendMenu(pop1, MF_STRING, IDM_OPT1, "Air Plane");
+	// second InsertMenuItem
+	MENUITEMINFO mif;
+	mif.cbSize = sizeof(MENUITEMINFO);
+	mif.cch = 100;
+	mif.dwItemData = NULL;
+	mif.dwTypeData = "About";
+	mif.fMask = MIIM_ID | MIIM_STRING | MIIM_STATE;
+	mif.fState = MFS_ENABLED;
+	mif.wID = IDM_OPT2;
+	InsertMenuItem(pop1, IDM_OPT2, FALSE, &mif);	
 }
